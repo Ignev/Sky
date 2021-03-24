@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="254.75" height="64.156" viewBox="0 0 254.75 64.156">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Abgerundetes_Rechteck_1" data-name="Abgerundetes Rechteck 1" class="cls-1" d="M202.625,763.853H437.376a10,10,0,0,1,10,10V818a10,10,0,0,1-10,10H202.625a10,10,0,0,1-10-10V773.853A10,10,0,0,1,202.625,763.853Z" transform="translate(-192.625 -763.844)"/>
+</svg>
