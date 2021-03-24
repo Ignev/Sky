@@ -1,14 +1,26 @@
 
 @font-face {
   font-family: "Sky";
-  src: url("./Sky_Med.ttf") format("ttf");
+  src: url("./Sky_Med.woff2") format("woff2"),
+  url("./Sky_Med.woff") format("woff"),
+  url("./Sky_Med.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sky-reg";
+  src: url("./Sky_Reg.woff2") format("woff2"),
+  url("./Sky_Reg.woff") format("woff"),
+  url("./Sky_Reg.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
 /* @font-face {
   font-family: "Sky";
-  src: url("./Sky_Reg.ttf") format("ttf");
-  font-weight: normal;
+  src: url("./Sky_Bold.woff2") format("woff2")
+  url("./Sky_Bold.woff") format("woff")
+  url("./Sky_Bold.ttf") format("ttf");
+  font-weight: bold;
   font-style: normal;
 } */
 *,
@@ -24,7 +36,6 @@ body {
 }
 body,
 html {
-  font-family: "Avenir", sans-serif;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -48,14 +59,18 @@ button {
   position: absolute;
   color: #fff;
   font-size: 10px;
+  font-family: "Sky-reg";
+}
+.top__text>span{
+  font-family: "Sky";
 }
 .top__text1{
   bottom: 30px;
-  left: 55px;
+  left: 37px;
 }
 .top__text2{
   bottom: 30px;
-  right: 60px;
+  right: 48px;
 }
 .bottom {
   width: 100vw;
@@ -79,7 +94,7 @@ button {
   font-size: 6vw;
   opacity: 0;
   transform: scale(0);
-  font-family: "Sky", sans-serif;
+  font-family: "Sky";
 }
 
 .price {
@@ -98,7 +113,7 @@ button {
   margin-bottom: 10px;
   margin-right: 2px;
   width: 65px;
-  height: 100px;
+  height: 115px;
 }
 .micro__text{
   text-align: center;
@@ -106,8 +121,8 @@ button {
   right: 18%;
   top: 15%;
   font-size: 13px;
-  font-family: sans-serif;
-  font-weight: lighter;
+  font-family: "Sky-reg";
+  font-weight: normal;
 }
 .bable{
   background: url(./bable.png) center no-repeat;
@@ -118,6 +133,8 @@ button {
 }
 .bable__text{
   text-align: center;
+  font-family: "Sky-reg";
+  font-size: 13px;
 }
 .btn {
   opacity: 0;

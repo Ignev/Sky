@@ -1,21 +1,3 @@
-@font-face {
-  font-family: "Avenir";
-  src: url("Avenir-Next-LT-W02-Demi.woff2") format("woff2"),
-    url("Avenir-Next-LT-W02-Demi.woff") format("woff"),
-    url("Avenir-Next-LT-W02-Demi.ttf") format("ttf"),
-    url("Avenir-Next-LT-W02-Demi.otf") format("otf");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir";
-  src: url("Avenir-Next-LT-W02-Regular.woff2") format("woff2"),
-  url("Avenir-Next-LT-W02-Regular.woff") format("woff"),
-  url("Avenir-Next-LT-W02-Regular.ttf") format("ttf"),
-  url("Avenir-Next-LT-W02-Regular.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
-}
 *,
 *::before,
 *::after {
