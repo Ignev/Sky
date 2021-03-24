@@ -4,65 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
-    
+
     <link rel="stylesheet" href="slick.css" />
     <link rel="stylesheet" href="style.css" />
-    <style>
-    </style>
+    <style></style>
   </head>
   <body>
     <div class="center">
-      <div class="top"></div>
+      <div class="top">
+        <div class="top__text1 top__text">Staffel 1, jetzt verfügbar</div>
+        <div class="top__text2 top__text">Teil 1, jetzt ansehen</div>
+      </div>
       <div class="bottom">
-          <img src="./logo.png" alt="logo" class="logo logoActive" id="logo">
-          <div class="text textActive" id="text">
-            Alle Serien von Sky und Netflix.
+        <img src="./logo.png" alt="logo" class="logo logoActive" id="logo" />
+        <div class="text textActive" id="text">
+          Alle Serien von Sky und Netflix.
+        </div>
+        <div class="price priceActive" id="price">
+          <img src="./micro.png" alt="micro" class="micro" />
+          <div class="micro__text">
+            Jetzt klicken <br />
+            und fragen.
           </div>
-          <div class="price priceActive" id="price">
-            <img src="./micro.png" alt="micro" class="micro">
-            <img src="./bable.png" alt="" class="bable">
+          <div class="bable">
+            <p class="bable__text">
+              „Hey Sky, zeig mir die <br />
+              aktuellen Serienhighlights.“
+            </p>
           </div>
-          <img src="./btn.png" alt="button" class="btn btnActive" id="btn">
+        </div>
+        <img src="./btn.png" alt="button" class="btn btnActive" id="btn" />
       </div>
     </div>
     <script src="jquery.js"></script>
     <script src="slick.js"></script>
     <script src="script.js"></script>
     <script>
-
-      var avgVStart = 0.01; 
+      var avgVStart = 0.01;
       var avgVEnd = 0.0;
       var isInterstitial = false;
-  
-      function animationPlay(){
-          btn.classList.add('btnActive');
-          text.classList.add('textActive');
-          logo.classList.add('logoActive');
-          price.classList.add('priceActive');
+
+      function animationPlay() {
+        btn.classList.add("btnActive");
+        text.classList.add("textActive");
+        logo.classList.add("logoActive");
+        price.classList.add("priceActive");
       }
-  
+
       if (!isInterstitial) {
-          window.addEventListener('message', function (event) {
-              var parseData = JSON.parse(event.data);
-  
-              if (parseData.rectangleTop > 0 && parseData.viewablePercent / 100 > avgVStart) {
-                  setTimeout(animationPlay, 200)
-              }
-  
-              if (parseData.rectangleTop < 0 && parseData.viewablePercent / 100 < avgVEnd) {
-  
-              }
-          });
+        window.addEventListener("message", function (event) {
+          var parseData = JSON.parse(event.data);
+
+          if (
+            parseData.rectangleTop > 0 &&
+            parseData.viewablePercent / 100 > avgVStart
+          ) {
+            setTimeout(animationPlay, 200);
+          }
+
+          if (
+            parseData.rectangleTop < 0 &&
+            parseData.viewablePercent / 100 < avgVEnd
+          ) {
+          }
+        });
       }
-  </script>
+    </script>
     <script>
       var isInterstitial = true;
       var avgVStart = 0.01;
       var avgVEnd = 0.0;
       var x_click = document.getElementsByTagName("body")[0];
       x_click.addEventListener("click", (e) => {
-          clickout_1();
+        clickout_1();
       });
       var clickTag1 = "";
       function clickout_1() {

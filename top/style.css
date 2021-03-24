@@ -32,12 +32,26 @@ button{
   outline: none;
 }
 .top {
-  background: url(bg.jpg) center;
+  background: url(bg.png) center;
   background-size: 100% 100%;
   display: flex;
   max-width: 100vw;
   height: 100vh;
+  position: relative;
   overflow: hidden;
   justify-content: space-between;
   overflow: hidden;
+}
+.top__text{
+  position: absolute;
+  color: #fff;
+  font-size: 1.5vw;
+}
+.top__text1{
+  bottom: 26px;
+  left: 8px;
+}
+.top__text2{
+  bottom: 26px;
+  right: 22px;
 }

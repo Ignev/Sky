@@ -5,6 +5,12 @@
   font-weight: normal;
   font-style: normal;
 }
+/* @font-face {
+  font-family: "Sky";
+  src: url("./Sky_Reg.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+} */
 *,
 *::before,
 *::after {
@@ -36,6 +42,20 @@ button {
   overflow: hidden;
   justify-content: space-between;
   overflow: hidden;
+  position: relative;
+}
+.top__text{
+  position: absolute;
+  color: #fff;
+  font-size: 2vw;
+}
+.top__text1{
+  bottom: 30px;
+  left: 55px;
+}
+.top__text2{
+  bottom: 30px;
+  right: 60px;
 }
 .bottom {
   width: 100vw;
@@ -56,7 +76,7 @@ button {
 }
 
 .text {
-  font-size: 5vw;
+  font-size: 6vw;
   opacity: 0;
   transform: scale(0);
   font-family: "Sky", sans-serif;
@@ -68,18 +88,34 @@ button {
   transition-delay: 0.1s;
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
 }
 .micro{
-  z-index: 10;
-  position: absolute;
-  top: 0%;
-  left: 41%;
-  width: 18%;
   height: auto;
+  margin-bottom: 10px;
+  margin-right: 2px;
+}
+.micro__text{
+  text-align: center;
+  position: absolute;
+  right: 18%;
+  top: 15%;
+  font-size: 4vw;
+  font-family: sans-serif;
+  font-weight: lighter;
 }
 .bable{
-  width: 90%;
+  background: url(./bable.png) center no-repeat;
+  background-size: 100% 100%;
+  padding: 10px;
+  padding-top: 20px;
+  color:#000;
+}
+.bable__text{
+  text-align: center;
 }
 .btn {
   opacity: 0;
