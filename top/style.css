@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Sky";
+  src: url("./Sky_Med.woff2") format("woff2"),
+  url("./Sky_Med.woff") format("woff"),
+  url("./Sky_Med.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sky-reg";
+  src: url("./Sky_Reg.woff2") format("woff2"),
+  url("./Sky_Reg.woff") format("woff"),
+  url("./Sky_Reg.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 *,
 *::before,
 *::after {
@@ -28,6 +44,10 @@ button{
   position: absolute;
   color: #fff;
   font-size: 6.9px;
+  font-family: "Sky-reg";
+}
+.top__text>span{
+  font-family: "Sky";
 }
 .top__text1{
   bottom: 26px;

@@ -15,14 +15,6 @@
   font-weight: normal;
   font-style: normal;
 }
-/* @font-face {
-  font-family: "Sky";
-  src: url("./Sky_Bold.woff2") format("woff2")
-  url("./Sky_Bold.woff") format("woff")
-  url("./Sky_Bold.ttf") format("ttf");
-  font-weight: bold;
-  font-style: normal;
-} */
 *,
 *::before,
 *::after {
