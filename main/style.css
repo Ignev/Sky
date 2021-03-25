@@ -207,7 +207,8 @@ button {
   background: url(./bable.png) center no-repeat;
   background-size: 100% 100%;
   padding: 10px;
-  padding-top: 25px;
+  padding-bottom: 5px;
+  padding-top: 20px;
   color:#000;
 }
 .bable__text{
