@@ -30,30 +30,113 @@ button{
   outline: none;
 }
 .top {
-  background: url(bg.png) center;
+  /* background: url(./bg.png) center; */
   background-size: 100% 100%;
   display: flex;
-  max-width: 100vw;
+  width: 100vw;
   height: 100vh;
-  position: relative;
   overflow: hidden;
-  justify-content: space-between;
-  overflow: hidden;
+  color: #fff;
+  font-family: "Sky-reg";
+  font-size: 6.9px;
 }
-.top__text{
-  position: absolute;
+.left,.right{
+  width: 50%;
+  height: 100vh;
+}
+.left{
+  background: url(./bg-left.png) center;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.left__name{
+  width: 30%;
+  margin-left: 5px;
+}
+.left__disc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.left__text{
+  margin-bottom: 5px;
+  font-size: 6.9px;
+}
+.left__text>span{
+  font-family: "Sky";
+}
+.left__logo{
+  width: 30%;
+}
+.right{
+  background: url(./bg-right.png) center;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+.right__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  height: 100%;
+}
+.right__name{
+  width: 70%;
+  margin-left: 5px;
+}
+.right__disc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.right__text{
+  margin-bottom: 5px;
+  font-size: 6.9px;
+}
+.right__text>span{
+  font-family: "Sky";
+}
+.right__logo{
+  width: 50%;
+}
+
+/* .top__text{
   color: #fff;
   font-size: 6.9px;
   font-family: "Sky-reg";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .top__text>span{
   font-family: "Sky";
 }
 .top__text1{
-  bottom: 26px;
-  left: 8px;
+  margin-left: 10px;
+  margin-bottom: 7px;
+}
+.top__text1>p{
+  margin-bottom: 3px;
+}
+.top__img{
+  width: 40%;
+  margin-bottom: -5px;
 }
 .top__text2{
-  bottom: 26px;
-  right: 22px;
+  margin-bottom: 5px;
 }
+.top__text2>p{
+  margin-bottom: 3px;
+}
+.top__img1{
+  width: 55%;
+} */

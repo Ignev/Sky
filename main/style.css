@@ -37,33 +37,57 @@ button {
 }
 
 .top {
-  background: url(./bg.png) center;
+  /* background: url(./bg.png) center; */
   background-size: 100% 100%;
   display: flex;
   width: 100vw;
   height: 37vh;
   overflow: hidden;
-  justify-content: space-between;
-  overflow: hidden;
-  position: relative;
 }
-.top__text{
-  position: absolute;
+.left,.right{
+  width: 50%;
+  
+}
+.left{
+  background: url(./bg-left.png) center;
+  background-size: 100% 100%;
+}
+.right{
+  background: url(./bg-right.png) center;
+  background-size: 100% 100%;
+}
+/* .top__text{
   color: #fff;
-  font-size: 10px;
+  font-size: 6.9px;
   font-family: "Sky-reg";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .top__text>span{
   font-family: "Sky";
 }
 .top__text1{
-  bottom: 30px;
-  left: 37px;
+  margin-left: 10px;
+  margin-bottom: 7px;
+}
+.top__text1>p{
+  margin-bottom: 3px;
+}
+.top__img{
+  width: 40%;
+  margin-bottom: -5px;
 }
 .top__text2{
-  bottom: 30px;
-  right: 48px;
+  margin-bottom: 5px;
 }
+.top__text2>p{
+  margin-bottom: 3px;
+}
+.top__img1{
+  width: 55%;
+} */
 .bottom {
   width: 100vw;
   height: 63vh;
