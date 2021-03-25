@@ -183,20 +183,25 @@ button {
   flex-direction: column;
   width: 100vw;
 }
+.micro__content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .micro{
   height: auto;
   margin-bottom: 10px;
   margin-right: 2px;
   width: 10%;
+  margin-left: 78px;
 }
 .micro__text{
   text-align: center;
-  position: absolute;
-  right: 22%;
-  top: 15%;
   font-size: 13px;
   font-family: "Sky-reg";
   font-weight: normal;
+  margin-left: 10px;
 }
 .bable{
   background: url(./bable.png) center no-repeat;
@@ -208,7 +213,7 @@ button {
 .bable__text{
   text-align: center;
   font-family: "Sky-reg";
-  font-size: 13px;
+  font-size: 4.5vw;
 }
 .btn {
   opacity: 0;
