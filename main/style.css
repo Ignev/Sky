@@ -43,6 +43,7 @@ button {
   width: 100vw;
   height: 37vh;
   overflow: hidden;
+  color: #fff;
 }
 .left,.right{
   width: 50%;
@@ -51,10 +52,68 @@ button {
 .left{
   background: url(./bg-left.png) center;
   background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.left__name{
+  width: 40%;
+  margin-left: 5px;
+  margin-top: -15px;
+}
+.left__disc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -30px;
+}
+.left__text{
+  margin-bottom: 5px;
+  font-size: 6.9px;
+}
+.left__text>span{
+  font-family: "Sky";
+}
+.left__logo{
+  width: 30%;
 }
 .right{
   background: url(./bg-right.png) center;
   background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+
+
+}
+.right__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.right__name{
+  width: 50%;
+  margin-left: 5px;
+}
+.right__disc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: -25px;
+}
+.right__text{
+  margin-bottom: 5px;
+  font-size: 6.9px;
+}
+.right__text>span{
+  font-family: "Sky";
+}
+.right__logo{
+  width: 45%;
 }
 /* .top__text{
   color: #fff;
