@@ -76,7 +76,7 @@ button {
   font-family: "Sky";
 }
 .left__logo{
-  width: 30%;
+  width: 20%;
 }
 .right{
   background: url(./bg-right.png) center;
@@ -102,10 +102,10 @@ button {
   align-items: center;
   width: 100%;
   margin-top: 15px;
-  margin-bottom: -25px;
+  margin-bottom: -27px;
 }
 .right__text{
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 6.9px;
   font-family: "Sky-reg";
 }
@@ -113,7 +113,7 @@ button {
   font-family: "Sky";
 }
 .right__logo{
-  width: 45%;
+  width: 25%;
 }
 /* .top__text{
   color: #fff;
