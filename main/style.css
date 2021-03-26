@@ -156,6 +156,44 @@ button {
   align-items: center;
   justify-content: space-around;
   color: #fff;
+  position: relative;
+}
+.bottom__video{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  background: linear-gradient(to right, #2e243d, #68599f);
+  display: none;
+}
+.video__media{
+  width: 100%;
+  height: 100%;
+}
+.video__sound{
+  position: absolute;
+  left: 10px;
+  bottom: 22%;
+}
+.video__mute{
+  position: absolute;
+  left: 10px;
+  bottom: 22%;
+  display: none;
+}
+.video__repeat{
+  position: absolute;
+  bottom: 35%;
+  left: 37%;
+  display: none;
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 .logo {
   width: 25%;

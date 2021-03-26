@@ -30,13 +30,19 @@
         </div>
       </div>
       <div class="bottom">
+        <div class="bottom__video" id="videoContainer">
+          <video src="./video.mp4" class="video__media" id="video" muted></video>
+          <img src="./sound.svg" alt="" id="sound" class="video__sound">
+          <img src="./mute.svg" alt="" id="mute" class="video__mute">
+          <img src="./restart.svg" alt="" id="restart" class="video__repeat">
+        </div>
         <img src="./logo.png" alt="logo" class="logo logoActive" id="logo" />
         <div class="text textActive" id="text">
           Alle Serien von Sky und Netflix.
         </div>
         <div class="price priceActive" id="price">
           <div class="micro__content">
-            <img src="./micro.png" alt="micro" class="micro" />
+            <img src="./micro.png" alt="micro" class="micro" id="micro" />
             <div class="micro__text">
               Jetzt klicken <br />
               und fragen.
@@ -87,7 +93,7 @@
         });
       }
     </script>
-    <script>
+    <!-- <script>
       var isInterstitial = true;
       var avgVStart = 0.01;
       var avgVEnd = 0.0;
@@ -161,6 +167,6 @@
           console.log(progress);
         }
       }
-    </script>
+    </script> -->
   </body>
 </html>
