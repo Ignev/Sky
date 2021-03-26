@@ -183,9 +183,15 @@ button {
 }
 .video__repeat{
   position: absolute;
-  bottom: 35%;
-  left: 37%;
+  left: 10px;
+  bottom: 22%;
   display: none;
+  width: 24px;
+  height: 24px;
+}
+.btn-video{
+  position: absolute;
+  bottom: 20px;
 }
 @keyframes fadeIn{
   0%{
