@@ -67,10 +67,10 @@ recognition.onresult = function (event) {
     var resString = event.results[0][0].transcript.toLowerCase();
     var arResult = resString.split(" ");
     console.log(resString);
-    arResult.forEach(function (i, v) {
+    arResult.forEach(function (i) {
       if (dictionary.indexOf(i) > -1 || dictionary.indexOf(resString) > -1) {
         videoContainer.style.animation = "fadeIn 1s ease";
-        videoContainer.opacity = "1";
+        videoContainer.style.opacity = "1";
         videoContainer.style.display = "block";
         video.play();
       }
@@ -78,15 +78,22 @@ recognition.onresult = function (event) {
   }
 
   if (!found) {
-    selectSlideById(-1);
+    
+    microText.innerHTML = `
+    Versuche es <br />
+    noch einmal.
+    `;
+    microText.style.animation = "fadeIn 1s ease";
+    microText.style.opacity = "1";
   }
 
   resetMicrophoneIcons();
 };
 micro.addEventListener("click", () => {
+  microText.style.animation = "fadeOut 1s ease";
+  microText.style.opacity = "0";
   recognition.start();
   setTimeout(function () {
     recognition.stop();
-    resetMicrophoneIcons();
   }, 4000);
 });
