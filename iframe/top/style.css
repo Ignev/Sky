@@ -30,7 +30,6 @@ button{
   outline: none;
 }
 .top {
-  /* background: url(./bg.png) center; */
   background-size: 100% 100%;
   display: flex;
   width: 100vw;
@@ -63,7 +62,7 @@ button{
 }
 .left__text{
   margin-bottom: 5px;
-  font-size: 6.9px;
+  font-size: 2vw;
 }
 .left__text>span{
   font-family: "Sky";
@@ -100,7 +99,7 @@ button{
 }
 .right__text{
   margin-bottom: 5px;
-  font-size: 6.9px;
+  font-size: 2vw;
 }
 .right__text>span{
   font-family: "Sky";

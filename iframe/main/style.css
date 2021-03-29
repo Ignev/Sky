@@ -37,7 +37,6 @@ button {
 }
 
 .top {
-  /* background: url(./bg.png) center; */
   background-size: 100% 100%;
   display: flex;
   width: 100vw;
@@ -65,15 +64,15 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: -30px;
+  margin-bottom: -20px;
 }
 .left__text{
   margin-bottom: 5px;
   font-size: 6.9px;
-  font-family: "Sky-reg";
+  font-family: "Sky-reg", sans-serif;
 }
 .left__text>span{
-  font-family: "Sky";
+  font-family: "Sky", sans-serif;
 }
 .left__logo{
   width: 20%;
@@ -102,51 +101,19 @@ button {
   align-items: center;
   width: 100%;
   margin-top: 15px;
-  margin-bottom: -27px;
+  margin-bottom: -18px;
 }
 .right__text{
   margin-bottom: 10px;
   font-size: 6.9px;
-  font-family: "Sky-reg";
+  font-family: "Sky-reg", sans-serif;
 }
 .right__text>span{
-  font-family: "Sky";
+  font-family: "Sky", sans-serif;
 }
 .right__logo{
   width: 25%;
 }
-/* .top__text{
-  color: #fff;
-  font-size: 6.9px;
-  font-family: "Sky-reg";
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.top__text>span{
-  font-family: "Sky";
-}
-.top__text1{
-  margin-left: 10px;
-  margin-bottom: 7px;
-}
-.top__text1>p{
-  margin-bottom: 3px;
-}
-.top__img{
-  width: 40%;
-  margin-bottom: -5px;
-}
-.top__text2{
-  margin-bottom: 5px;
-}
-.top__text2>p{
-  margin-bottom: 3px;
-}
-.top__img1{
-  width: 55%;
-} */
 .bottom {
   width: 100vw;
   height: 63vh;
@@ -221,7 +188,7 @@ button {
   font-size: 7vw;
   opacity: 0;
   transform: scale(0);
-  font-family: "Sky-reg";
+  font-family: "Sky-reg", sans-serif;
 }
 
 .price {
@@ -251,7 +218,7 @@ button {
 .micro__text{
   text-align: center;
   font-size: 13px;
-  font-family: "Sky-reg";
+  font-family: "Sky-reg", sans-serif;
   font-weight: normal;
   margin-left: 10px;
 }
@@ -265,7 +232,7 @@ button {
 }
 .bable__text{
   text-align: center;
-  font-family: "Sky-reg";
+  font-family: "Sky-reg",sans-serif;
   font-size: 4.5vw;
 }
 .btn {
@@ -273,6 +240,7 @@ button {
   transition: 1.5s;
   transition-delay: 0.3s;
   width: 40%;
+  z-index: 1000;
 }
 
 .textActive {

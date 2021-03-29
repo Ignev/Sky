@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="slick.css" />
     <link rel="stylesheet" href="style.css" />
+    <script type="module" src="speech/polyfill.js"></script>
     <style></style>
   </head>
   <body>
@@ -35,7 +36,6 @@
           <img src="./sound.svg" alt="" id="sound" class="video__sound">
           <img src="./mute.svg" alt="" id="mute" class="video__mute">
           <img src="./restart.svg" alt="" id="restart" class="video__repeat">
-          <img src="./btn.png" alt="button" class="btn-video" id="btn" />
         </div>
         <img src="./logo.png" alt="logo" class="logo logoActive" id="logo" />
         <div class="text textActive" id="text">
@@ -60,7 +60,7 @@
         <img src="./btn.png" alt="button" class="btn btnActive" id="btn" />
       </div>
     </div>
-    <script src="jquery.js"></script>
+    <script src="./jquery.js"></script>
     <script src="script.js"></script>
     <script>
       var avgVStart = 0.01;
