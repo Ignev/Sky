@@ -1,4 +1,4 @@
-sound.addEventListener("click", () => {
+sound.addEventListener("click", function() {
   if (video.muted == true) {
     video.muted = false;
     mute.style.display = "block";
@@ -9,7 +9,7 @@ sound.addEventListener("click", () => {
     mute.style.display = "none";
   }
 });
-mute.addEventListener("click", () => {
+mute.addEventListener("click", function() {
   if (video.muted == true) {
     video.muted = false;
     mute.style.display = "block";
@@ -25,7 +25,7 @@ video.onended = function (e) {
   sound.style.display = "none";
   stop = true;
 };
-restart.addEventListener("click", () => {
+restart.addEventListener("click", function() {
   video.play();
   sound.style.display = "block";
   restart.style.display = "none";
@@ -33,21 +33,21 @@ restart.addEventListener("click", () => {
 var recorder = null;
 dictionary = [
   "hey",
-  "hey sky",
-  "zeig mir die aktuellen serienhighlights",
   "sky",
+  "hey sky",
   "zeig",
   "wechsle",
   "mir",
   "die",
   "aktuellen",
   "serienhighlights",
+  "zeig mir die aktuellen serienhighlights",
 ];
 var countFail = 0;
 function onGetUserMedia(stream) {
   recorder = new MediaRecorder(stream);
 
-  recorder.addEventListener("dataavailable", (e) => {
+  recorder.addEventListener("dataavailable", function(e) {
     var reader = new FileReader();
     reader.readAsDataURL(e.data);
     console.log(e.data);
@@ -79,7 +79,7 @@ function onGetUserMedia(stream) {
             var resString = data.results[0].alternatives[0].transcript.toLowerCase();
             var arResult = resString.split(" ");
             console.log(resString);
-            $.each(arResult, function (i, v) {
+            $.each(arResult, function (i) {
               if (
                 dictionary.indexOf(i) > -1 ||
                 dictionary.indexOf(resString) > -1
@@ -87,7 +87,6 @@ function onGetUserMedia(stream) {
                 videoContainer.style.animation = "fadeIn 1s ease";
                 videoContainer.style.opacity = "1";
                 videoContainer.style.display = "block";
-                video.play();
                 found = true;
                 return false;
               }
@@ -110,7 +109,7 @@ function onGetUserMedia(stream) {
 
 function onGetUserMediaError() {}
 
-micro.addEventListener("click", () => {
+micro.addEventListener("click", function() {
   navigator.getUserMedia =
     navigator.getUserMedia ||
     navigator.webkitGetUserMedia ||
@@ -130,10 +129,12 @@ micro.addEventListener("click", () => {
   } else {
    
   }
+  micro.classList.add("micro-action");
   microText.style.animation = "fadeOut 1s ease";
   microText.style.opacity = "0";
   setTimeout(function () {
     if (recorder) {
+      micro.classList.remove("micro-action");
       recorder.stop();
     }
   }, 4000);
