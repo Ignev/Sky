@@ -1,9 +1,11 @@
 var user = detect.parse(navigator.userAgent);
-if (user.browser.family === "Chrome" || user.browser.family === "Chrome Mobile") {
+if (
+  user.browser.family === "Chrome" ||
+  user.browser.family === "Chrome Mobile"
+) {
   console.log("You're using the Chrome browser");
   console.log(user.browser.family);
-}
-else{
+} else {
   console.log("You're using no the Chrome browser");
   console.log(user.browser.family);
 }
@@ -40,7 +42,10 @@ restart.addEventListener("click", function () {
   restart.style.display = "none";
 });
 
-if (user.browser.family === "Chrome" || user.browser.family === "Chrome Mobile") {
+if (
+  user.browser.family === "Chrome" ||
+  user.browser.family === "Chrome Mobile"
+) {
   dictionary = [
     "hey",
     "sky",
@@ -115,28 +120,28 @@ if (user.browser.family === "Chrome" || user.browser.family === "Chrome Mobile")
   var recorder = null;
   var words = {
     ".module": [
-      'hey sky zeig mir die aktuellen serienhighlights',
-			'hey sky zeig mir die aktuellen serien',
-			'hey sky zeig mir die aktuellen',
-			'hey sky zeig mir die',
-			'hey sky zeig mir',
-			'hey sky zeig',
-			'hey sky',
-			'hey',
-			'sky',
-			'zeig',
-			'mir',
-			'die',
-			'aktuellen',
-			'serienhighlights',
-			'serien highlights',
-			'serien high lights',
-			'serien',
-			'highlights',
-			'zeig mir die',
-			'zeig mir',
-			'aktuellen serienhighlights',
-			'aktuellen serien',
+      "hey sky zeig mir die aktuellen serienhighlights",
+      "hey sky zeig mir die aktuellen serien",
+      "hey sky zeig mir die aktuellen",
+      "hey sky zeig mir die",
+      "hey sky zeig mir",
+      "hey sky zeig",
+      "hey sky",
+      "hey",
+      "sky",
+      "zeig",
+      "mir",
+      "die",
+      "aktuellen",
+      "serienhighlights",
+      "serien highlights",
+      "serien high lights",
+      "serien",
+      "highlights",
+      "zeig mir die",
+      "zeig mir",
+      "aktuellen serienhighlights",
+      "aktuellen serien",
     ],
   };
 
@@ -211,9 +216,12 @@ if (user.browser.family === "Chrome" || user.browser.family === "Chrome Mobile")
 }
 
 micro.addEventListener("click", function () {
-    if (user.browser.family === "Chrome" || user.browser.family === "Chrome Mobile") {
-      try {
-        recognition.start();
+  if (
+    user.browser.family === "Chrome" ||
+    user.browser.family === "Chrome Mobile"
+  ) {
+    try {
+      recognition.start();
       micro.classList.add("micro-action");
       microText.style.animation = "fadeOut 1s ease";
       microText.style.opacity = "0";
@@ -221,11 +229,11 @@ micro.addEventListener("click", function () {
         micro.classList.remove("micro-action");
         recognition.stop();
       }, 4000);
-      } catch (error) {
-        alert("Mikrofonzugang einschalten");
-      }
-      
-    } else {
+    } catch (error) {
+      alert("Mikrofonzugang einschalten");
+    }
+  } else {
+    try {
       navigator.getUserMedia =
         navigator.getUserMedia ||
         navigator.webkitGetUserMedia ||
@@ -244,8 +252,7 @@ micro.addEventListener("click", function () {
         );
       } else {
       }
-      try {
-        micro.classList.add("micro-action");
+      micro.classList.add("micro-action");
       microText.style.animation = "fadeOut 1s ease";
       microText.style.opacity = "0";
       setTimeout(function () {
@@ -254,11 +261,8 @@ micro.addEventListener("click", function () {
           recorder.stop();
         }
       }, 4000);
-      } catch (error) {
-        alert("Mikrofonzugang einschalten")
-      }
-      
+    } catch (error) {
+      alert("Mikrofonzugang einschalten");
     }
-  
-
+  }
 });
