@@ -211,9 +211,9 @@ if (user.browser.family === "Chrome" || user.browser.family === "Chrome Mobile")
 }
 
 micro.addEventListener("click", function () {
-  try {
     if (user.browser.family === "Chrome" || user.browser.family === "Chrome Mobile") {
-      recognition.start();
+      try {
+        recognition.start();
       micro.classList.add("micro-action");
       microText.style.animation = "fadeOut 1s ease";
       microText.style.opacity = "0";
@@ -221,6 +221,10 @@ micro.addEventListener("click", function () {
         micro.classList.remove("micro-action");
         recognition.stop();
       }, 4000);
+      } catch (error) {
+        alert("Mikrofonzugang einschalten");
+      }
+      
     } else {
       navigator.getUserMedia =
         navigator.getUserMedia ||
@@ -240,7 +244,8 @@ micro.addEventListener("click", function () {
         );
       } else {
       }
-      micro.classList.add("micro-action");
+      try {
+        micro.classList.add("micro-action");
       microText.style.animation = "fadeOut 1s ease";
       microText.style.opacity = "0";
       setTimeout(function () {
@@ -249,9 +254,11 @@ micro.addEventListener("click", function () {
           recorder.stop();
         }
       }, 4000);
+      } catch (error) {
+        alert("Mikrofonzugang einschalten")
+      }
+      
     }
-  } catch (error) {
-    alert("Mikrofonzugang einschalten")
-  }
+  
 
 });
