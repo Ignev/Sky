@@ -8,7 +8,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #1A4F45;
+	background-color: #000;
 }
 
 .desktop {
@@ -20,8 +20,6 @@ body {
 }
 
 .device {
-	/*width: 351px;
-	height: 736px;*/
 	width: 18.28vw;
 	height: 38.33vw;
 	background-image: url("iPhone.png");

@@ -1,17 +1,13 @@
 
 @font-face {
   font-family: "Sky";
-  src: url("./Sky_Med.woff2") format("woff2"),
-  url("./Sky_Med.woff") format("woff"),
-  url("./Sky_Med.ttf") format("ttf");
+  src: url("./Sky_Med.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Sky-reg";
-  src: url("./Sky_Reg.woff2") format("woff2"),
-  url("./Sky_Reg.woff") format("woff"),
-  url("./Sky_Reg.ttf") format("ttf");
+  src: url("./Sky_Reg.ttf");
   font-weight: normal;
   font-style: normal;
 }
