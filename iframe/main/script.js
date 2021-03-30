@@ -251,7 +251,7 @@ micro.addEventListener("click", function () {
       }, 4000);
     }
   } catch (error) {
-    console.log(error.name + ": " + error.message);
+    alert("Mikrofonzugang einschalten")
   }
 
 });
